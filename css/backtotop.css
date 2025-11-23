@@ -1,0 +1,48 @@
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #414241;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: .4s;
+    background-color: #ffffffb8;
+    border-radius: 15px;
+  transform: scale(0.9);
+  animation: top .3s ease-in-out;
+    
+}
+@keyframes top{
+    0%{transform: scale(0);}
+    100%{transform: scale(1)}
+}
+
+@keyframes top1{
+    0%{transform: scale(1);
+        
+    }
+    100%{transform: scale(1.2);
+        border-radius: 30px;
+        background-color: black;
+        
+    }
+}
+
+.addt{
+    background-color: black;
+  animation: top1 .6s ease-in-out;
+  
+}
+.back-to-top-btn:hover {
+    background-color: #ffffff49;
+  transform: scale(0.9);
+
+
+}

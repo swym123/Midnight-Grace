@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/h2_footer.css">
+    <link rel="stylesheet" href="css/home2.css">
+</head>
+
+<!-- nav -->
+
+
+<header class="header" id="header" data-header>
+    <nav class="nav nav-container">
+       <a href="#" class="nav__logo">Midnight Grace</a>
+
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li class="nav__item">
+                <a href="home.html" class="nav__link">
+                   <span>Home</span>
+                </a>
+             </li>
+
+             <li class="nav__item">
+                <a href="home.html" class="nav__link">
+                     
+                   <span>Products</span>
+                </a>
+             </li>
+
+             <li class="nav__item">
+                <a href="home.html" class="nav__link">
+                       
+                   <span>FAQ</span>
+                </a>
+             </li>
+
+             <li class="nav__item">
+                <a href="home.html" class="nav__link">
+                        
+                   <span>About Us</span>
+                </a>
+             </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+             <i class="ri-close-large-line"></i>
+          </div>
+
+          <div class="nav__social">
+             <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                <i class="ri-instagram-line"></i>
+             </a>
+
+             <a href="https://github.com/" target="_blank" class="nav__social-link">
+                <i class="ri-github-line"></i>
+             </a>
+
+             <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                <i class="ri-dribbble-line"></i>
+             </a>
+
+             <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                <i class="ri-linkedin-box-line"></i>
+             </a>
+          </div>
+       </div>
+
+       <!-- Toggle button -->
+       <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+       </div>
+    </nav>
+ </header>
+
+
+<!-- main -->
+    <div class="container">
+        <div class="shoppingCart">
+            <h1>Shopping Cart</h1>
+            <div class="shopping">
+                <!-- <img src="image/shopping.svg">
+                  -->
+                CART
+
+            </div>
+        </div>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <div class="checkOut">
+            <div>Total: <span class="total">0</span></div>
+            <div class="closeShopping">Close</div>
+        </div>
+        <ul class="listCard"></ul>
+       
+    </div>
+
+    <!-- footer -->
+
+
+<footer class="footer">
+    <h1 style="color: white; margin-bottom: 70px; font-size: 40px; padding-left: 10px;"> Midnight Grace</h1>
+ 
+     <div class="footer-container">
+         <div class="row">
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#"><span>Contact us</span></a></li>
+                    <li><a href="#"><span>FAQ</span></a></li>
+                    <li><a href="#"><span>About us</span></a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#"><span>bracelet</span></a></li>
+                    <li><a href="#"><span>chain </span></a></li>
+                    <li><a href="#"><span>rings</span></a></li>
+                    <li><a href="#"><span>pendant </span></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+ 
+                  <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-dribbble-line"></i>
+                  </a>
+ 
+                  <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+                    
+                </div>
+            </div>
+         </div>
+     </div>
+ </footer>
+
+  
+<script src="js/navbar.js"></script>
+<script src="js/home2.js"></script>
+</body>
+</html>
+
+<!-- <div class="accordionn scroll">
+   <div class="accordion-header">
+       <button class="tab-link active" onclick="openTab(event, 'bracelet')">Men's Bracelet</button>
+       <button class="tab-link" onclick="openTab(event, 'chain')">Men's Chain</button>
+       <button class="tab-link" onclick="openTab(event, 'ring')">Men's Ring</button>
+       <button class="tab-link" onclick="openTab(event, 'earrings')">Women's Pendant</button>
+
+   </div>
+
+   <div id="bracelet" class="accordion-content show">
+          
+   
+   
+<div class="box-container">
+
+   <div class="box"  > 
+
+      <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+   </div>
+
+  
+   <div class="box"  > 
+
+      <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+   </div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+
+</div>
+   </div>
+
+   <div id="chain" class="accordion-content">
+
+<div class="box-container">
+
+   <div class="box"  > 
+
+      <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+   </div>
+
+
+   <div class="box"  > 
+
+      <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+   </div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+
+<div class="box"  > 
+
+   <div class="loding" style="left: 0px; z-index: 1;"></div>
+<div class="MainCard">
+<div class="ABC active"  style="background-image: url(img/a1c1.webp); background-position: center; background-size: cover;"></div>
+<div class="ABC" style="background-image: url(img/a1c2.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c3.webp);"></div>
+<div class="ABC"  style="background-image: url(img/a1c4.webp);"></div>
+</div>
+
+<p>perfeefsdgrthgyct</p>
+<button> Quick view</button>
+
+
+</div>
+</div>
+</div>
+
+
+   
+   
+
+       
+           </div> -->

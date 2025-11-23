@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  .logos {
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 60px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  
+  
+  /* giving shading effect on both the sides */
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+  }
+  
+  .logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+  }
+  
+  
+  
+  /* if we hover over slide then it get paused */
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    height: -5px;
+    animation: 7s slide infinite linear;  /*  for continous animation */
+  }
+  
+  /* smaller image size */
+  .logos-slide img {
+    height: 35px;
+  
+  }

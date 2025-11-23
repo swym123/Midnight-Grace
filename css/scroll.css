@@ -1,0 +1,12 @@
+
+.scroll {
+
+opacity: 0;
+transform: translateY(40px);
+transition: transform .6s ease, opacity 1s ease;
+
+}
+.scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
